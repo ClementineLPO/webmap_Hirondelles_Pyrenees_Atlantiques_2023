@@ -758,26 +758,26 @@ function fnc_project_color(values, context) {
 
 
 function exp_Donnesantrieures_4rule0_eval_expression(context) {
-    // "Nom_latin" = 'Hirundo rustica' AND "Code_atlas" <> 99
+    // "NOM_LATIN" = 'Hirundo rustica'
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return ((feature.properties['Nom_latin']  == 'Hirundo rustica') && (feature.properties['Code_atlas']  != 99));
+        return (feature.properties['NOM_LATIN']  == 'Hirundo rustica');
     } else {
-        return ((feature['Nom_latin']  == 'Hirundo rustica') && (feature['Code_atlas']  != 99));
+        return (feature['NOM_LATIN']  == 'Hirundo rustica');
     }
 }
 
 
 function exp_Donnesantrieures_4rule1_eval_expression(context) {
-    // "Nom_latin" = 'Delichon urbicum' AND "Code_atlas" <> 99
+    // "NOM_LATIN" = 'Delichon urbicum'
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return ((feature.properties['Nom_latin']  == 'Delichon urbicum') && (feature.properties['Code_atlas']  != 99));
+        return (feature.properties['NOM_LATIN']  == 'Delichon urbicum');
     } else {
-        return ((feature['Nom_latin']  == 'Delichon urbicum') && (feature['Code_atlas']  != 99));
+        return (feature['NOM_LATIN']  == 'Delichon urbicum');
     }
 }
